@@ -1,7 +1,7 @@
 class Oddball extends Particle {
   Oddball() {
-    myX = ((Math.random()*width));//+((1/4)*width);
-    myY = 250;
+    myX = (((Math.random()*500))/2)+(500/4); //for some reason width isn't working
+    myY = (((Math.random()*500))/2)+(500/4);;
     starColor = color(255, 0, 0);
     //myAngle = 0 //Math.random()*2*Math.PI;
     //mySpeed = Math.random()*5;
