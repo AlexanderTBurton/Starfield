@@ -1,0 +1,24 @@
+class Particle {
+  double myX, myY;
+  int starColor;
+  double myAngle, mySpeed;
+  Particle() {
+    myX = width/2;
+    myY = height/2;
+    myAngle = Math.random()*2*Math.PI;
+    mySpeed = Math.random()*5;
+    starColor = color(255);
+    System.out.println(myAngle);
+    System.out.println(mySpeed);
+  }
+  
+  void move() {
+    myX += mySpeed*(Math.cos(myAngle));
+    myY += mySpeed*(Math.sin(myAngle));
+  }
+  
+  void show() {
+    fill(starColor);
+    ellipse((float)myX, (float)myY, starSize, starSize);
+  }
+}
