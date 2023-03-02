@@ -1,0 +1,19 @@
+class Oddball extends Particle {
+  Oddball() {
+    myX = ((Math.random()*width));//+((1/4)*width);
+    myY = 250;
+    starColor = color(255, 0, 0);
+    //myAngle = 0 //Math.random()*2*Math.PI;
+    //mySpeed = Math.random()*5;
+  }
+
+  void move() {
+    myX += 0; //mySpeedX;
+    myY += 0; //mySpeedY;
+  }
+  
+  void show() {
+    fill(starColor);
+    ellipse((float)myX, (float)myY, starSize*5, starSize*5);
+  }
+}
