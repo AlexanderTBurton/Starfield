@@ -1,15 +1,15 @@
 class Oddball extends Particle {
   Oddball() {
-    myX = (((Math.random()*500))/2)+(500/4); //for some reason width isn't working
-    myY = (((Math.random()*500))/2)+(500/4);;
+    myX = ((Math.random()*width));//+((1/4)*width);
+    myY = 250;
     starColor = color(255, 0, 0);
     //myAngle = 0 //Math.random()*2*Math.PI;
     //mySpeed = Math.random()*5;
   }
 
   void move() {
-    myX += 0; //mySpeedX;
-    myY += 0; //mySpeedY;
+    myX += (Math.random()*2); //mySpeedX;
+    myY += (Math.random()*2)-1; //mySpeedY;
   }
   
   void show() {
